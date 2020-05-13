@@ -5,7 +5,7 @@ Created on Mon May 11 16:51:50 2020
 @author: sande
 """
 
-import numpy as numpy
+import numpy as np
 import pandas as pd
 import pickle
 
