@@ -1,6 +1,6 @@
-Flask== 0.12.2
+Flask==0.12.2
 gunicorn==20.0.4
-itsdangerous== 0.24
+itsdangerous==0.24
 MarkupSafe==1.0
 Jinja2==2.9.6
 Werkzeug==0.12.2
