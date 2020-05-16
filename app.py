@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 11 17:08:46 2020
-
-@author: sande
-"""
-
 import numpy as np
 from flask import Flask,request,jsonify,render_template
 import pickle
@@ -18,8 +11,8 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
+    int_features=[float(x) for x in request.form.values()]
     
-    int_features=[int(x)for x in request.form.value()]
     final_features = [np.array(int_features)]
     prediction=model.predict(final_features)
     
