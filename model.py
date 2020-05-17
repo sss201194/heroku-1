@@ -15,7 +15,7 @@ y=dataset.iloc[:,-1]
 
 
 from sklearn.linear_model import LinearRegression
-regressor=LinearRegression
+regressor=LinearRegression()
 
 regressor.fit(x,y)
 
